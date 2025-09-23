@@ -19,4 +19,8 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("Scores");
     }
+    public void ChangeRules()
+    {
+        SceneManager.LoadScene("Rules");
+    }
 }
