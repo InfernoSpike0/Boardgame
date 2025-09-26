@@ -676,8 +676,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 504279234}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeBoard
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeTurnOrder
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -945,8 +945,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 504279234}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeBoard
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeTurnOrder
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1293,8 +1293,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 504279234}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
-        m_MethodName: ChangeBoard
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeTurnOrder
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

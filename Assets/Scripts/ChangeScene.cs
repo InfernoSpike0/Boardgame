@@ -23,4 +23,8 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("Rules");
     }
+    public void ChangeTurnOrder()
+    {
+        SceneManager.LoadScene("TurnOrder");
+    }
 }
