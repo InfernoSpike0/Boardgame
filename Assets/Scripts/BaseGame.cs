@@ -5,7 +5,7 @@ using System.Collections;
 public class GameBase : MonoBehaviour
 {
     [Header("Players")]
-    public int playerCount = 4;   // set from menu
+    public int playerCount = 4;   // set from menu (Currently just 4 to make unity shut up, but should be hooked to main menu later)
     public List<Player> players = new List<Player>();
 
     [Header("Turn Logic")]
@@ -14,7 +14,7 @@ public class GameBase : MonoBehaviour
     [Header("Debug")]
     public bool debug = true;
 
-    void Start()
+    void GameStart()
     {
         // Create players based on playerCount
         for (int i = 1; i <= playerCount; i++)
