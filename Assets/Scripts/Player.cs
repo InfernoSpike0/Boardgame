@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
             { "money2", 0 },
             { "money3", 0 },
             { "money4", 0 },
-            { "money5", 0 }
+            { "money5", 0 },
+            { "joker", 0}
         };
     }
 
