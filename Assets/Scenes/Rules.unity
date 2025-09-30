@@ -538,9 +538,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: The goal of the game is to earn the most points. You can earn points by
     purchasing paths, completing quests, and having the longest path at the end of
-    the game.\n\nDuring your turn, you can choose to do one of three things:\n1.
-    Collect a quest card.\n2. Collect path currency.\n3. Purchase a path, if you
-    can afford it.\n\nThe game ends once all paths are filled.
+    the game.\n\nDuring your turn, you can choose to do one of two things:\n1. Collect
+    two path currency.\n2. Purchase a path, if you can afford it.\n\nThe game ends
+    once all paths are filled.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
