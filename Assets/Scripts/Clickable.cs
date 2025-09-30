@@ -1,9 +1,12 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]           // ensure it’s clickable in 2D
+[DisallowMultipleComponent]
 public class Clickable : MonoBehaviour
 {
     public enum Kind { Node, Path }
-    public Kind kind;
+
+    [SerializeField] private Kind kind = Kind.Node;   
 
     private void OnMouseDown()
     {
@@ -13,14 +16,27 @@ public class Clickable : MonoBehaviour
         switch (kind)
         {
             case Kind.Node:
-                var node = GetComponent<NodeChecker>();
-                if (node != null) sel.OnNodeClicked(node);
+                if (TryGetComponent<NodeChecker>(out var node))
+                    sel.OnNodeClicked(node);
+                else
+                    Debug.LogWarning($"{name}: Clickable set to Node but NodeChecker missing.");
                 break;
 
             case Kind.Path:
-                var path = GetComponent<PathSegments>();
-                if (path != null) sel.OnPathClicked(path);
+                if (TryGetComponent<PathSegments>(out var path))
+                    sel.OnPathClicked(path);
+                else
+                    Debug.LogWarning($"{name}: Clickable set to Path but PathSegments missing.");
                 break;
         }
     }
+
+#if UNITY_EDITOR
+    // Auto-set Kind when you add the component or click "Reset"
+    private void Reset()
+    {
+        if (GetComponent<NodeChecker>() != null) kind = Kind.Node;
+        else if (GetComponent<PathSegments>() != null) kind = Kind.Path;
+    }
+#endif
 }
